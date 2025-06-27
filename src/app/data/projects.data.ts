@@ -45,4 +45,12 @@ export const PROJECTS: IProject[] = [
     ],
     languages: ['HTML', 'CSS', 'TS'],
   },
+  {
+    name: 'This Portfolio Website',
+    imageFilename: 'portfolio-website.jpg',
+    gitHubLink: 'https://github.com/knsdev/portfolio',
+    description: '',
+    features: ['Angular app', 'Responsive design'],
+    languages: ['HTML', 'CSS', 'TS'],
+  },
 ];
