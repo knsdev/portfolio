@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+:root {
+  --color-0: #fffbde;
+  --color-1: #91c8e4;
+  --color-2: #749bc2;
+  --color-3: #4682a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Funnel Sans", sans-serif;
+}
