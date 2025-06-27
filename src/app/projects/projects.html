@@ -2,7 +2,7 @@
   <h2>Projects</h2>
   <div class="projects-container">
     @for (project of projectList; track $index) {
-    <div class="project">
+    <div class="project" (mouseenter)="onMouseEnter($index)" (mouseleave)="onMouseLeave()">
       <img [src]="'/images/projects/' + project.imageFilename" alt="Image of {{ project.name }}" />
       <div class="project-body">
         <h3>{{ project.name }}</h3>
@@ -20,6 +20,11 @@
           }
         </ul>
       </div>
+      @if ($index == mouseHoverProjectIndex) {
+      <a href="{{ project.gitHubLink }}" target="_blank">
+        <div class="project-hover-area"></div>
+      </a>
+      }
     </div>
     }
   </div>
