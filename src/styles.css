@@ -49,6 +49,14 @@ h4 {
   font-size: 1.25rem;
 }
 
+hr {
+  height: 2px;
+  background-color: rgba(30, 30, 30, 0.75);
+  margin-bottom: 1rem;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 @media (width < 902px) {
   .container {
     width: 100%;

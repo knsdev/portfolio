@@ -47,7 +47,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     name: 'This Portfolio Website',
-    imageFilename: 'portfolio-website.jpg',
+    imageFilename: 'portfolio-website.png',
     gitHubLink: 'https://github.com/knsdev/portfolio',
     description: '',
     features: ['Angular app', 'Responsive design'],

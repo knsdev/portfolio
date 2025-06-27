@@ -7,9 +7,10 @@
 
 .project {
   position: relative;
-  border: 1px solid rgba(93, 93, 93, 0.515);
+  border: 1px solid rgba(93, 93, 93, 0.5);
   border-radius: 0.5rem;
   overflow: hidden;
+  flex-basis: 25rem;
   max-width: 25rem;
 
   img {
@@ -26,6 +27,10 @@
 
 .project-body {
   padding: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -76,5 +81,9 @@ li {
   .projects-container {
     flex-flow: column nowrap;
     align-items: center;
+  }
+
+  .project {
+    flex-basis: auto;
   }
 }
