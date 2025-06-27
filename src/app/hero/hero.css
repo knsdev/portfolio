@@ -1,0 +1,36 @@
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-container {
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+
+.in-front-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-text-background {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.hero-text {
+  color: white;
+  font-size: 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
