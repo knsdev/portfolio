@@ -6,7 +6,7 @@ img {
 
 .img-container {
   width: 100%;
-  height: 25rem;
+  height: 20rem;
   position: relative;
 }
 
@@ -24,13 +24,13 @@ img {
 
 .hero-text-background {
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 1.5rem;
+  padding: 1.25rem;
   border-radius: 0.25rem;
 }
 
 .hero-text {
   color: white;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
