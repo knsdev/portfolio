@@ -14,6 +14,6 @@ export const PROJECTS: IProject[] = [
       'Loading model files (obj), textures (png, jpg), shaders (glsl)',
       'Modular and extendable design',
     ],
-    languages: ['C++', 'glsl'],
+    languages: ['C++', 'GLSL'],
   },
 ];

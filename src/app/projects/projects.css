@@ -15,12 +15,20 @@
     object-fit: cover;
   }
 
-  .project-body {
-    padding: 1rem;
-  }
-
   p {
     font-size: 1.1rem;
     line-height: 1.75rem;
   }
+}
+
+.project-body {
+  padding: 1rem;
+}
+
+h4 {
+  margin-top: 1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
 }
