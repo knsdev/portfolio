@@ -1,6 +1,8 @@
 .projects-container {
   display: flex;
-  justify-content: center;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 .project {
@@ -31,4 +33,11 @@ h4 {
 
 li {
   margin-bottom: 0.25rem;
+}
+
+@media (width < 902px) {
+  .projects-container {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
