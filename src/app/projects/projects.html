@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    @for (project of projectList; track $index) {
+    <div class="project">
+      <img [src]="'/images/projects/' + project.imageFilename" alt="Image of {{ project.name }}" />
+      <div class="project-body">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+    }
+  </div>
+</div>
