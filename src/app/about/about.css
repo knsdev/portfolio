@@ -1,0 +1,32 @@
+img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  margin-top: 0.75rem;
+}
+
+h3 {
+  margin-bottom: 0.75rem;
+}
+
+p {
+  max-width: 22rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+@media (width < 902px) {
+  .about-content {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
