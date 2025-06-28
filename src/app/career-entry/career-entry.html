@@ -9,11 +9,12 @@
       @if (entry.companyName.length > 0) {
       <!--  -->
       @if (entry.companyUrl.length > 0) {
-      <a href="{{ entry.companyUrl }}" target="_blank"> <span>{{ entry.companyName }}</span></a> / }@else {
-      <span>{{ entry.companyName }} / </span>
+      <a href="{{ entry.companyUrl }}" target="_blank"> <span>{{ entry.companyName }}</span></a
+      >}@else {
+      <span>{{ entry.companyName }}</span>
       } }
       <!--  -->
-      @if (entry.location.length > 0){
+      @if (entry.location.length > 0){ @if (entry.companyName.length > 0) { / }
       <span>{{ entry.location }}</span>
       }
     </h5>
