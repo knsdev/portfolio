@@ -30,6 +30,8 @@
   --color-bg-project-card: var(--color-0);
   --color-bg-career: var(--color-0);
   --color-bg-footer: var(--color-1);
+  --color-bg-contact: var(--color-3);
+  --color-bg-contact-panel: var(--color-1);
 }
 
 * {

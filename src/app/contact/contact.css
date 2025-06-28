@@ -1,0 +1,57 @@
+.root {
+  background-color: var(--color-bg-contact);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem;
+
+  .panel {
+    background-color: var(--color-bg-contact-panel);
+    flex-basis: auto;
+    max-width: 30rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    .panel-title,
+    .panel-text {
+      text-align: center;
+      margin: 0;
+    }
+
+    .contact-links-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.2rem;
+
+      .element-container {
+        .bi {
+          font-size: 2.25rem;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+a,
+a:visited {
+  color: rgb(19, 43, 83);
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: rgb(44, 95, 183);
+  transform: scale(1.15);
+  transition: all 0.2s ease-in-out;
+}
