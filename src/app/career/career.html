@@ -1,18 +1,24 @@
 <div class="root">
-  <div class="container">
-    <h2 id="work-experience">Work Experience</h2>
-    <hr />
-    <div class="career-entry-container">
-      @for (pos of workPositions; track $index) {
-      <app-career-entry [entry]="pos" />
-      }
+  <div class="work">
+    <div class="container">
+      <h2 id="work-experience">Work Experience</h2>
+      <hr />
+      <div class="career-entry-container">
+        @for (pos of workPositions; track $index) {
+        <app-career-entry [entry]="pos" />
+        }
+      </div>
     </div>
-    <h2 id="education">Education</h2>
-    <hr />
-    <div class="career-entry-container">
-      @for (edu of educationEntries; track $index) {
-      <app-career-entry [entry]="edu" />
-      }
+  </div>
+  <div class="education">
+    <div class="container education">
+      <h2 id="education">Education</h2>
+      <hr />
+      <div class="career-entry-container">
+        @for (edu of educationEntries; track $index) {
+        <app-career-entry [entry]="edu" />
+        }
+      </div>
     </div>
   </div>
 </div>

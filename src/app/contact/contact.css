@@ -1,5 +1,4 @@
 .root {
-  background-color: var(--color-bg-contact);
   width: 100%;
   height: auto;
   display: flex;
@@ -7,12 +6,17 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 2.5rem;
+  padding: 4rem;
+  background-color: var(--color-bg-contact);
+  background-image: url("/images/background/meeting-0.jpg");
+  background-position-y: top;
+  background-size: cover;
 
   .panel {
     background-color: var(--color-bg-contact-panel);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
     flex-basis: auto;
-    max-width: 30rem;
+    max-width: 28rem;
     border-radius: 1rem;
     display: flex;
     flex-flow: column nowrap;
@@ -32,11 +36,10 @@
       justify-content: center;
       align-items: center;
       gap: 1rem;
-      font-size: 1.2rem;
 
       .element-container {
         .bi {
-          font-size: 2.25rem;
+          font-size: 2.5rem;
           margin-right: 0.5rem;
         }
       }
@@ -52,6 +55,6 @@ a:visited {
 
 a:hover {
   color: rgb(44, 95, 183);
-  transform: scale(1.15);
+  transform: scale(1.25);
   transition: all 0.2s ease-in-out;
 }

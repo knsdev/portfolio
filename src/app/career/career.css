@@ -1,3 +1,7 @@
-.root {
-  background-color: var(--color-bg-career);
+.work {
+  background-color: var(--color-bg-career-work);
+}
+
+.education {
+  background-color: var(--color-bg-career-education);
 }
