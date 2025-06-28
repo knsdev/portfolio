@@ -1,16 +1,13 @@
-.nav-root {
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: white;
-  border-bottom: 2px solid rgb(228, 228, 228);
-  position: fixed;
-  width: 100%;
-  z-index: 100;
 }
 
-.nav-root-invisible {
-  position: static;
+.nav-root {
+  border-bottom: 2px solid rgb(228, 228, 228);
   width: 100%;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .nav-child {

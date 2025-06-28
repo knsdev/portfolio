@@ -1,3 +1,18 @@
+<!-- Templates -->
+<ng-template #navLinks>
+  <a (click)="toggleNavbar()" href="#">About me</a>
+  <a (click)="toggleNavbar()" href="#projects">Projects</a>
+  <a (click)="toggleNavbar()" href="#work-experience">Work Experience</a>
+  <a (click)="toggleNavbar()" href="#education">Education</a>
+  <a (click)="toggleNavbar()" href="#footer">Skills</a>
+  <a (click)="toggleNavbar()" href="#footer">Contact me</a>
+</ng-template>
+
+<ng-template #navToggleBtn>
+  <button class="toggle-navbar-button" (click)="toggleNavbar()">Toggle Navbar</button>
+</ng-template>
+
+<!-- Navbar -->
 <header>
   <nav>
     <div class="nav-root">
@@ -6,29 +21,16 @@
           <h2 class="first-name">Kim Niklas</h2>
           <h2 class="last-name">Schl&uuml;ter</h2>
         </div>
+
         <div class="nav-list">
-          <a href="#">About me</a>
-          <a href="#projects">Projects</a>
-          <a href="#work-experience">Work Experience</a>
-          <a href="#education">Education</a>
-          <a href="#footer">Skills</a>
-          <a href="#footer">Contact me</a>
-        </div>
-      </div>
-    </div>
-    <div class="nav-root-invisible">
-      <div class="nav-child">
-        <div class="name-container">
-          <h2 class="first-name">Kim Niklas</h2>
-          <h2 class="last-name">Schl&uuml;ter</h2>
-        </div>
-        <div class="nav-list">
-          <a href="#">About me</a>
-          <a href="#projects">Projects</a>
-          <a href="#work-experience">Work Experience</a>
-          <a href="#education">Education</a>
-          <a href="#footer">Skills</a>
-          <a href="#footer">Contact me</a>
+          @if (isSmallScreen) { @if (collapsed) {
+          <ng-container *ngTemplateOutlet="navToggleBtn"></ng-container>
+          } @else {
+          <ng-container *ngTemplateOutlet="navToggleBtn"></ng-container>
+          <ng-container *ngTemplateOutlet="navLinks"></ng-container>
+          } } @else {
+          <ng-container *ngTemplateOutlet="navLinks"></ng-container>
+          }
         </div>
       </div>
     </div>
