@@ -1,13 +1,13 @@
 .career-entry {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .career-entry-date {
   flex-basis: 15rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 
 .career-entry-description {
