@@ -1,6 +1,16 @@
-nav {
+.nav-root {
   background-color: white;
   border-bottom: 2px solid rgb(228, 228, 228);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav-root-invisible {
+  position: static;
+  width: 100%;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .nav-child {
@@ -9,7 +19,7 @@ nav {
   justify-content: space-between;
   align-items: baseline;
 
-  padding: 1.5rem;
+  padding: 0.75rem;
   padding-bottom: 0;
   width: 80%;
   margin: auto;
@@ -19,18 +29,18 @@ nav {
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .name-container {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   margin-right: 1rem;
 }
 
 h2 {
   display: inline;
   margin-right: 0.5rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -43,19 +53,13 @@ h2 {
 }
 
 a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 200;
   letter-spacing: 1px;
   color: black;
   text-decoration: none;
   /* text-transform: uppercase; */
 }
-
-/* @media (width < 1167px) {
-  .name-container {
-    margin-bottom: 1.5rem;
-  }
-} */
 
 @media (width < 902px) {
   .nav-list {
