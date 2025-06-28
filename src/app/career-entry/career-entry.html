@@ -4,11 +4,18 @@
   </div>
   <div class="career-entry-description">
     <h4>{{ entry.title }}</h4>
+
     <h5 class="company-name">
-      <a href="{{ entry.companyUrl }}" target="_blank">
-        <span>{{ entry.companyName }}</span>
-      </a>
-      <span> / {{ entry.location }}</span>
+      @if (entry.companyName.length > 0) {
+      <!--  -->
+      @if (entry.companyUrl.length > 0) {
+      <a href="{{ entry.companyUrl }}" target="_blank"> <span>{{ entry.companyName }}</span></a> / }@else {
+      <span>{{ entry.companyName }} / </span>
+      } }
+      <!--  -->
+      @if (entry.location.length > 0){
+      <span>{{ entry.location }}</span>
+      }
     </h5>
 
     <ul>
@@ -17,18 +24,20 @@
       }
     </ul>
 
+    @if (entry.technologies.length > 0) {
     <h5 class=".list-title">Technologies</h5>
     <ul>
       @for (tech of entry.technologies; track $index) {
       <li>{{ tech }}</li>
       }
     </ul>
-
+    } @if (entry.products.length > 0) {
     <h5 class=".list-title">Links</h5>
     <ul>
       @for (product of entry.products; track $index) {
       <li><a href="{{ product.url }}" target="_blank">{{ product.name }}</a></li>
       }
     </ul>
+    }
   </div>
 </div>
