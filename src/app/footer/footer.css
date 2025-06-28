@@ -57,3 +57,24 @@ a:hover {
   transform: scale(1.15);
   transition: all 0.2s ease-in-out;
 }
+
+@media (width < 1000px) {
+  .footer-content {
+    .element-container > p {
+      display: none;
+    }
+  }
+}
+
+@media (width < 600px) {
+  .footer-content {
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+}
+
+@media (width < 410px) {
+  .footer-content {
+    gap: 0.1rem;
+  }
+}
