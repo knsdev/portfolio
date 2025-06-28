@@ -42,15 +42,15 @@ export const WORK_POSITIONS: ICareerEntry[] = [
 ];
 
 export const EDUCATION_ENTRIES: ICareerEntry[] = [
-  {
-    title: '',
-    companyName: '',
-    location: '',
-    companyUrl: '',
-    productUrls: [],
-    startDate: '',
-    endDate: '',
-    technologies: [],
-    descriptionList: [],
-  },
+  // {
+  //   title: '',
+  //   companyName: '',
+  //   location: '',
+  //   companyUrl: '',
+  //   productUrls: [],
+  //   startDate: '',
+  //   endDate: '',
+  //   technologies: [],
+  //   descriptionList: [],
+  // },
 ];

@@ -2,18 +2,3 @@
   /* border: 1px solid black; */
   padding: 1rem;
 }
-
-.career-entry {
-  margin-bottom: 4rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.career-entry-date {
-  flex-basis: 10rem;
-}
-
-.career-entry-description {
-  flex-basis: 30rem;
-}

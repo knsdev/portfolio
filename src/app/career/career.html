@@ -3,15 +3,9 @@
   <hr />
   <div class="career-entry-container">
     @for (pos of workPositions; track $index) {
-    <div class="career-entry">
-      <div class="career-entry-date">
-        <p>{{ pos.startDate }} - {{ pos.endDate }}</p>
-      </div>
-      <div class="career-entry-description">
-        <h4>{{ pos.title }}</h4>
-        <p>{{ pos.companyName }} / {{ pos.location }}</p>
-      </div>
-    </div>
+    <app-career-entry [entry]="pos" />
+    } @for (edu of educationEntries; track $index) {
+    <app-career-entry [entry]="edu" />
     }
   </div>
 </div>
