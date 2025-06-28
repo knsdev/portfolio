@@ -2,22 +2,23 @@
 
 :root {
   /* Color palette */
-  --color-0: white;
-  --color-1: #f4ebd3;
-  --color-2: #ded3c4;
-  --color-3: #98a1bc;
-  --color-4: #555879;
+  --color-0: whitesmoke;
+  --color-1: #f2efe7;
+  --color-2: #9acbd0;
+  --color-3: #48a6a7;
+  --color-4: #006a71;
+  --color-5: black;
 
-  --color-bg-navbar: var(--color-4);
-  --color-text-first-name: var(--color-2);
+  --color-bg-navbar: var(--color-1);
+  --color-text-first-name: var(--color-4);
   --color-text-last-name: var(--color-3);
-  --color-navbar-links: var(--color-1);
+  --color-navbar-links: var(--color-5);
 
   --color-bg-about: var(--color-1);
   --color-bg-projects: var(--color-3);
   --color-bg-project-card: var(--color-1);
-  --color-bg-career: var(--color-1);
-  --color-bg-footer: var(--color-2);
+  --color-bg-career: var(--color-2);
+  --color-bg-footer: var(--color-1);
 }
 
 * {
