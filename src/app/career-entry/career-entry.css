@@ -6,9 +6,25 @@
 }
 
 .career-entry-date {
-  flex-basis: 10rem;
+  flex-basis: 15rem;
 }
 
 .career-entry-description {
-  flex-basis: 30rem;
+  flex-basis: 50rem;
+}
+
+ul {
+  margin-bottom: 1.5rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.company-name {
+  margin-bottom: 1rem;
+}
+
+.list-title {
+  margin-top: 1rem;
 }

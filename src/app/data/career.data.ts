@@ -5,10 +5,10 @@ export const WORK_POSITIONS: ICareerEntry[] = [
     title: 'Game Programmer (Startup)',
     companyName: 'BARS STUDIOS GmbH',
     companyUrl: 'https://www.barsstudios.com/',
-    productUrls: [
-      'https://play.google.com/store/apps/details?id=com.barsstudios.craftheim&hl=en',
-      'https://play.google.com/store/apps/details?id=com.barsstudios.swordplay&hl=en',
-      'https://play.google.com/store/apps/details?hl=en&id=com.barsstudios.fallbreak&hl=en',
+    products: [
+      { name: 'Craftheim (Game)', url: 'https://play.google.com/store/apps/details?id=com.barsstudios.craftheim&hl=en' },
+      { name: 'Swordplay (Game)', url: 'https://play.google.com/store/apps/details?id=com.barsstudios.swordplay&hl=en' },
+      { name: 'Fallbreak (Game)', url: 'https://play.google.com/store/apps/details?hl=en&id=com.barsstudios.fallbreak&hl=en' },
     ],
     location: 'Vienna, Austria',
     startDate: '10/2019',
@@ -25,13 +25,22 @@ export const WORK_POSITIONS: ICareerEntry[] = [
     companyName: 'KAIKO GmbH',
     location: 'Frankfurt am Main, Germany',
     companyUrl: 'https://kaikogames.com/',
-    productUrls: [
-      'https://store.steampowered.com/app/667720/Red_Faction_Guerrilla_ReMarstered/',
-      'https://kingdomsofamalur.thqnordic.com/',
+    products: [
+      {
+        name: 'Red Faction Guerrilla Re-Mars-tered (Game)',
+        url: 'https://store.steampowered.com/app/667720/Red_Faction_Guerrilla_ReMarstered/',
+      },
+      { name: 'Kingdoms of Amalur: Re-Reckoning (Game)', url: 'https://kingdomsofamalur.thqnordic.com/' },
     ],
     startDate: '07/2017',
     endDate: '09/2019',
-    technologies: ['C++', 'Ruby', 'Console SDKs (Playstation, Xbox, Nintendo Switch)', 'Steam API (PC)'],
+    technologies: [
+      'C++',
+      'Ruby',
+      'In-house game engine',
+      'Console SDKs (Playstation, Xbox, Nintendo Switch)',
+      'Steam API (Windows PC)',
+    ],
     descriptionList: [
       'Cross platform development in C++',
       'Refactoring and optimization of legacy game code for current consoles and PC',

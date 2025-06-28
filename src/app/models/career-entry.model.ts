@@ -3,7 +3,10 @@ export interface ICareerEntry {
   companyName: string;
   location: string;
   companyUrl: string;
-  productUrls: string[];
+  products: {
+    name: string;
+    url: string;
+  }[];
   startDate: string;
   endDate: string;
   technologies: string[];
