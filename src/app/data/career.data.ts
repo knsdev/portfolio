@@ -5,7 +5,7 @@ export const WORK_POSITIONS: ICareerEntry[] = [
     title: 'Full Stack Web Developer Course',
     companyName: 'Code Factory',
     location: 'Vienna (90% onsite, 10% online)',
-    companyUrl: '',
+    companyUrl: 'https://codefactory.wien/',
     products: [],
     startDate: '12/05/2025',
     endDate: '28/08/2025',
