@@ -1,12 +1,12 @@
 <div class="container">
-  <h2>Work Experience</h2>
+  <h2 id="work-experience">Work Experience</h2>
   <hr />
   <div class="career-entry-container">
     @for (pos of workPositions; track $index) {
     <app-career-entry [entry]="pos" />
     }
   </div>
-  <h2>Education</h2>
+  <h2 id="education">Education</h2>
   <hr />
   <div class="career-entry-container">
     @for (edu of educationEntries; track $index) {
