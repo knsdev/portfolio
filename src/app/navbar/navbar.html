@@ -8,8 +8,12 @@
   <a (click)="toggleNavbar()" href="#footer">Contact me</a>
 </ng-template>
 
-<ng-template #navToggleBtn>
-  <button class="toggle-navbar-button" (click)="toggleNavbar()">Toggle Navbar</button>
+<ng-template #navToggleBtnOpen>
+  <button class="toggle-navbar-button" (click)="toggleNavbar()"><i class="bi bi-list"></i></button>
+</ng-template>
+
+<ng-template #navToggleBtnClose>
+  <button class="toggle-navbar-button" (click)="toggleNavbar()"><i class="bi bi-x-lg"></i></button>
 </ng-template>
 
 <!-- Navbar -->
@@ -24,10 +28,10 @@
 
         <div class="nav-list">
           @if (isSmallScreen) { @if (collapsed) {
-          <ng-container *ngTemplateOutlet="navToggleBtn"></ng-container>
+          <ng-container *ngTemplateOutlet="navToggleBtnOpen"></ng-container>
           } @else {
-          <ng-container *ngTemplateOutlet="navToggleBtn"></ng-container>
           <ng-container *ngTemplateOutlet="navLinks"></ng-container>
+          <ng-container *ngTemplateOutlet="navToggleBtnClose"></ng-container>
           } } @else {
           <ng-container *ngTemplateOutlet="navLinks"></ng-container>
           }
