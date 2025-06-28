@@ -2,6 +2,17 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
 
+## License & Personal Data Notice
+
+The code and content in this repository are provided for viewing and educational purposes only.
+You may not reuse, copy, or redistribute my personal data or images (such as my profile picture or any photographs of me) for any purpose.
+
+If you wish to use any part of this repository—including code, designs, or assets—beyond personal reference, you must obtain explicit written permission from the repository owner.
+
+For inquiries or permission requests, please contact [knsdev](https://github.com/knsdev/).
+
+See the LICENSE file for full details.
+
 ## Development server
 
 To start a local development server, run:
