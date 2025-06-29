@@ -4,12 +4,17 @@
 
 .skills-container {
   display: flex;
+  flex-flow: row nowrap;
   gap: 2rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 1rem 0;
 }
 
 .skill {
+  flex-basis: 18rem;
   background-color: var(--color-bg-skills-card);
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   border: 1px solid rgba(93, 93, 93, 0.5);
   border-radius: 0.5rem;
   overflow: hidden;
@@ -24,4 +29,11 @@
 
 h5 {
   margin-top: 1rem;
+}
+
+@media (width < 902px) {
+  .skills-container {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 }

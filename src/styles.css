@@ -52,13 +52,14 @@ html {
   scroll-behavior: smooth;
 }
 
-#projects {
-  scroll-margin-top: 2.2rem;
+#projects,
+#skills {
+  scroll-margin-top: 2.35rem;
 }
 
 #work-experience,
 #education {
-  scroll-margin-top: 3.6rem;
+  scroll-margin-top: 3.75rem;
 }
 
 body {
