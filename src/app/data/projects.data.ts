@@ -1,7 +1,24 @@
 import { IProject } from '../models/project.model';
 
+export enum ProjectId {
+  None = -1,
+
+  Portfolio,
+  OnlineStoreFrontend,
+  WeeklyPlanner,
+  FoodBlog,
+  Iolite,
+
+  Count,
+}
+
+export function getProjectById(id: ProjectId): IProject | undefined {
+  return PROJECTS.find((x) => x.id == id);
+}
+
 export const PROJECTS: IProject[] = [
   {
+    id: ProjectId.Portfolio,
     name: 'This Portfolio Website',
     imageFilename: 'portfolio-website.png',
     gitHubLink: 'https://github.com/knsdev/portfolio',
@@ -10,6 +27,7 @@ export const PROJECTS: IProject[] = [
     languages: ['HTML', 'CSS', 'TS'],
   },
   {
+    id: ProjectId.OnlineStoreFrontend,
     name: 'Online Store Frontend',
     imageFilename: 'online-store-frontend.jpg',
     gitHubLink: 'https://github.com/knsdev/weekly-planner',
@@ -23,6 +41,7 @@ export const PROJECTS: IProject[] = [
     languages: ['HTML', 'CSS', 'TS'],
   },
   {
+    id: ProjectId.WeeklyPlanner,
     name: 'Weekly Planner',
     imageFilename: 'weekly-planner.jpg',
     gitHubLink: 'https://github.com/knsdev/weekly-planner',
@@ -31,6 +50,7 @@ export const PROJECTS: IProject[] = [
     languages: ['HTML', 'CSS', 'JS'],
   },
   {
+    id: ProjectId.FoodBlog,
     name: 'Food blog',
     imageFilename: 'food-blog-about.jpg',
     gitHubLink: 'https://github.com/knsdev/food-blog',
@@ -39,6 +59,7 @@ export const PROJECTS: IProject[] = [
     languages: ['HTML', 'CSS'],
   },
   {
+    id: ProjectId.Iolite,
     name: 'iolite',
     imageFilename: 'terrain_02.png',
     gitHubLink: 'https://github.com/knsdev/iolite',

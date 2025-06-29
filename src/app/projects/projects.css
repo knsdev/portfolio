@@ -62,6 +62,7 @@ li {
   i,
   p {
     color: rgba(255, 255, 255, 0.75);
+    transition: all 0.25s ease-in-out;
   }
 
   i {
@@ -73,6 +74,30 @@ li {
     text-align: center;
     font-size: 3rem;
     line-height: 3rem;
+  }
+}
+
+.project-hover-area-hidden {
+  i,
+  p {
+    color: rgba(255, 255, 255, 0.1);
+    transform: scale(0);
+  }
+}
+
+.project-hover-area-active {
+  i,
+  p {
+    color: rgba(255, 255, 255, 0.75);
+    transform: scale(1);
+  }
+}
+
+.project-hover-area-active:hover {
+  i,
+  p {
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1.3);
   }
 }
 

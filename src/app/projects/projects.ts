@@ -1,22 +1,23 @@
 import { Component } from '@angular/core';
 import { IProject } from '../models/project.model';
-import { PROJECTS } from '../data/projects.data';
+import { ProjectId, PROJECTS } from '../data/projects.data';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
 export class Projects {
   projectList: IProject[] = PROJECTS;
-  mouseHoverProjectIndex: number = -1;
+  mouseHoverProjectId: ProjectId = ProjectId.None;
 
-  onMouseEnter(i: number) {
-    this.mouseHoverProjectIndex = i;
+  onMouseEnter(i: ProjectId) {
+    this.mouseHoverProjectId = i;
   }
 
   onMouseLeave() {
-    this.mouseHoverProjectIndex = -1;
+    this.mouseHoverProjectId = ProjectId.None;
   }
 }

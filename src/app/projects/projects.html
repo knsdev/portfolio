@@ -4,8 +4,8 @@
     <hr />
     <div class="projects-container">
       <!-- Loop through project list -->
-      @for (project of projectList; track $index) {
-      <div class="project" (mouseenter)="onMouseEnter($index)" (mouseleave)="onMouseLeave()">
+      @for (project of projectList; track project.id) {
+      <div class="project" (mouseenter)="onMouseEnter(project.id)" (mouseleave)="onMouseLeave()">
         <img [src]="'/images/projects/' + project.imageFilename" alt="Image of {{ project.name }}" />
         <div class="project-body">
           <h3>{{ project.name }}</h3>
@@ -33,14 +33,18 @@
         </div>
 
         <!-- On mouse hover: Show GitHub Link -->
-        @if ($index == mouseHoverProjectIndex) {
         <a href="{{ project.gitHubLink }}" target="_blank">
-          <div class="project-hover-area">
+          <div
+            class="project-hover-area"
+            [ngClass]="{
+            'project-hover-area-active': project.id === mouseHoverProjectId,
+            'project-hover-area-hidden': project.id !== mouseHoverProjectId
+            }"
+          >
             <i class="bi bi-github"></i>
             <p>GitHub</p>
           </div>
         </a>
-        }
       </div>
       }
     </div>
