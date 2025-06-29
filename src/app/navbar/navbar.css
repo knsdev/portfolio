@@ -26,7 +26,6 @@ header {
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
-  margin-bottom: 0.75rem;
 }
 
 .name-container {
@@ -50,12 +49,18 @@ h2 {
 }
 
 a {
-  font-size: 1rem;
+  height: 2.25rem;
+  font-size: 1.15rem;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: var(--color-navbar-links);
   text-decoration: none;
-  /* text-transform: uppercase; */
+  transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.25);
+  font-weight: 600;
 }
 
 .toggle-navbar-button {
