@@ -9,28 +9,13 @@
   --color-4: #006a71;
   --color-5: black;
 
-  /* Normal bright version */
-  /*
-  --color-bg-navbar: var(--color-1);
-  --color-text-first-name: var(--color-4);
-  --color-text-last-name: var(--color-3);
-  --color-navbar-links: var(--color-5);
-  --color-bg-about: var(--color-1);
-  --color-bg-projects: var(--color-3);
-  --color-bg-project-card: var(--color-1);
-  --color-bg-career-work: var(--color-2);
-  --color-bg-career-education: var(--color-2);
-  --color-bg-contact: var(--color-3);
-  --color-bg-contact-panel: var(--color-1);
-  --color-bg-footer: var(--color-1);
-  */
-
   /* Very bright version */
   --color-bg-navbar: var(--color-1);
   --color-text-first-name: var(--color-4);
   --color-text-last-name: var(--color-3);
   --color-navbar-links: var(--color-5);
   --color-bg-about: var(--color-0);
+  --color-bg-profile-picture: var(--color-1);
   --color-bg-projects: var(--color-1);
   --color-bg-project-card: var(--color-0);
   --color-bg-career-work: var(--color-0);
