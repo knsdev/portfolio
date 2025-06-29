@@ -14,12 +14,14 @@
           <li>{{ info }}</li>
           }
         </ul>
+        @if (skill.projectIds.length > 0) {
         <h5>Projects</h5>
         <ul>
           @for (projectId of skill.projectIds; track $index) { @let project = getProjectById(projectId); @if (project) {
           <a href="{{ project.gitHubLink }}" target="_blank"><li>{{ project.name }}</li></a>
           } }
         </ul>
+        }
       </div>
       }
     </div>
