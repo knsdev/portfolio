@@ -73,6 +73,7 @@ export const WORK_POSITIONS: ICareerEntry[] = [
         url: 'https://store.steampowered.com/app/667720/Red_Faction_Guerrilla_ReMarstered/',
       },
       { name: 'Kingdoms of Amalur: Re-Reckoning (Game)', url: 'https://kingdomsofamalur.thqnordic.com/' },
+      { name: 'Me on IMDb (Credits)', url: 'https://www.imdb.com/name/nm11885294/' },
     ],
     startDate: '07/2017',
     endDate: '09/2019',

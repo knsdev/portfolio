@@ -3,10 +3,16 @@ import { ISkill, SkillLevel } from '../models/skill.model';
 
 export const SKILLS: ISkill[] = [
   {
-    name: 'Angular',
+    name: 'HTML, CSS',
+    level: SkillLevel.Advanced,
+    infoList: ['Learned at CodeFactory'],
+    projectIds: [ProjectId.FoodBlog, ProjectId.WeeklyPlanner, ProjectId.OnlineStoreFrontend, ProjectId.Portfolio],
+  },
+  {
+    name: 'JavaScript',
     level: SkillLevel.Intermediate,
     infoList: ['Learned at CodeFactory'],
-    projectIds: [ProjectId.OnlineStoreFrontend, ProjectId.Portfolio],
+    projectIds: [ProjectId.WeeklyPlanner],
   },
   {
     name: 'TypeScript',
@@ -15,10 +21,10 @@ export const SKILLS: ISkill[] = [
     projectIds: [ProjectId.OnlineStoreFrontend, ProjectId.Portfolio],
   },
   {
-    name: 'JavaScript',
+    name: 'Angular',
     level: SkillLevel.Intermediate,
     infoList: ['Learned at CodeFactory'],
-    projectIds: [ProjectId.WeeklyPlanner],
+    projectIds: [ProjectId.OnlineStoreFrontend, ProjectId.Portfolio],
   },
   {
     name: 'C/C++',
