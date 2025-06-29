@@ -5,23 +5,30 @@
     <div class="skills-container">
       @for (skill of skills; track $index) {
       <div class="skill">
-        <div class="title-container">
-          <h3>{{ skill.name }}</h3>
+        <h3
+          [ngClass]="{
+            'bg-beginner': skill.level === SkillLevel.Beginner,
+            'bg-intermediate': skill.level === SkillLevel.Intermediate,
+            'bg-advanced': skill.level === SkillLevel.Advanced}"
+        >
+          {{ skill.name }}
+        </h3>
+        <div class="skill-body">
           <h4>{{ skill.level }}</h4>
-        </div>
-        <ul>
-          @for (info of skill.infoList; track $index) {
-          <li>{{ info }}</li>
+          <ul>
+            @for (info of skill.infoList; track $index) {
+            <li>{{ info }}</li>
+            }
+          </ul>
+          @if (skill.projectIds.length > 0) {
+          <h5>Projects</h5>
+          <ul>
+            @for (projectId of skill.projectIds; track $index) { @let project = getProjectById(projectId); @if (project) {
+            <a href="{{ project.gitHubLink }}" target="_blank"><li>{{ project.name }}</li></a>
+            } }
+          </ul>
           }
-        </ul>
-        @if (skill.projectIds.length > 0) {
-        <h5>Projects</h5>
-        <ul>
-          @for (projectId of skill.projectIds; track $index) { @let project = getProjectById(projectId); @if (project) {
-          <a href="{{ project.gitHubLink }}" target="_blank"><li>{{ project.name }}</li></a>
-          } }
-        </ul>
-        }
+        </div>
       </div>
       }
     </div>
