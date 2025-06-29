@@ -17,6 +17,7 @@
   overflow: hidden;
   flex-basis: 25rem;
   max-width: 25rem;
+  transition: all 0.2s ease-in-out;
 
   img {
     width: 100%;
@@ -28,6 +29,10 @@
     font-size: 1.1rem;
     line-height: 1.75rem;
   }
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .project-body {
@@ -78,6 +83,8 @@ li {
 }
 
 .project-hover-area-hidden {
+  background-color: rgba(0, 0, 0, 0);
+
   i,
   p {
     color: rgba(255, 255, 255, 0.1);

@@ -1,1 +1,28 @@
-<p>skills works!</p>
+<div class="root">
+  <div class="container">
+    <h2>Skills</h2>
+    <hr />
+    <div class="skills-container">
+      @for (skill of skills; track $index) {
+      <div class="skill">
+        <div class="title-container">
+          <h3>{{ skill.name }}</h3>
+          <!-- <h4>&ndash;</h4> -->
+          <h4>{{ skill.level }}</h4>
+        </div>
+        <ul>
+          @for (info of skill.infoList; track $index) {
+          <li>{{ info }}</li>
+          }
+        </ul>
+        <h5>Projects</h5>
+        <ul>
+          @for (projectId of skill.projectIds; track $index) { @let project = getProjectById(projectId); @if (project) {
+          <a href="{{ project.gitHubLink }}" target="_blank"><li>{{ project.name }}</li></a>
+          } }
+        </ul>
+      </div>
+      }
+    </div>
+  </div>
+</div>

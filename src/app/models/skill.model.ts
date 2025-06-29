@@ -10,5 +10,5 @@ export interface ISkill {
   name: string;
   level: SkillLevel;
   infoList: string[];
-  projects: ProjectId[];
+  projectIds: ProjectId[];
 }

@@ -34,7 +34,9 @@
   --color-bg-projects: var(--color-1);
   --color-bg-project-card: var(--color-0);
   --color-bg-career-work: var(--color-0);
-  --color-bg-career-education: var(--color-0);
+  --color-bg-career-education: var(--color-1);
+  --color-bg-skills: var(--color-0);
+  --color-bg-skills-card: var(--color-1);
   --color-bg-contact: var(--color-3);
   --color-bg-contact-panel: var(--color-1);
   --color-bg-footer: var(--color-1);
@@ -69,8 +71,14 @@ body {
   padding: 1.5rem;
 }
 
-ul {
+ul,
+ol {
   margin-left: 1rem;
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 h2,
