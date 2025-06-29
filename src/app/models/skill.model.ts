@@ -1,4 +1,4 @@
-import { ProjectId } from '../data/projects.data';
+import { ProjectId } from './project.model';
 
 export enum SkillLevel {
   Beginner = 'Beginner',

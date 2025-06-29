@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { IProject } from '../models/project.model';
-import { ProjectId, PROJECTS } from '../data/projects.data';
+import { IProject, ProjectId } from '../models/project.model';
+import { PROJECTS } from '../data/projects.data';
 import { NgClass } from '@angular/common';
 
 @Component({

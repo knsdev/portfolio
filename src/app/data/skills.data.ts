@@ -1,5 +1,5 @@
+import { ProjectId } from '../models/project.model';
 import { ISkill, SkillLevel } from '../models/skill.model';
-import { getProjectById, ProjectId } from './projects.data';
 
 export const SKILLS: ISkill[] = [
   {

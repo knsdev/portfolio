@@ -1,16 +1,4 @@
-import { IProject } from '../models/project.model';
-
-export enum ProjectId {
-  None = -1,
-
-  Portfolio,
-  OnlineStoreFrontend,
-  WeeklyPlanner,
-  FoodBlog,
-  Iolite,
-
-  Count,
-}
+import { IProject, ProjectId } from '../models/project.model';
 
 export function getProjectById(id: ProjectId): IProject | undefined {
   return PROJECTS.find((x) => x.id == id);
