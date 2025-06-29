@@ -1,12 +1,3 @@
-img {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 20%;
-  box-shadow: 0 0 15px var(--color-3);
-}
-
 .root {
   background-color: var(--color-bg-about);
 }
@@ -17,6 +8,50 @@ img {
   align-items: flex-start;
   gap: 4rem;
   margin-top: 0.75rem;
+}
+
+.img-container {
+  position: relative;
+  z-index: 0;
+  width: 20rem;
+  height: 20rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.img-container:hover {
+  transform: scale(1.05);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.25);
+}
+
+.rotating-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
+  width: 115%;
+  height: 115%;
+  background: linear-gradient(var(--color-3), var(--color-3), var(--color-3), var(--color-1));
+  filter: blur(20px);
+  animation: rotationAnim 6s linear infinite;
+}
+
+@keyframes rotationAnim {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 h3 {
