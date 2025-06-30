@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 4rem;
+  padding: 4rem 2rem;
   background-color: var(--color-bg-contact);
   background-image: url("/images/background/meeting-0.jpg");
   background-position-y: top;

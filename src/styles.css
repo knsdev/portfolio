@@ -51,6 +51,10 @@ body {
   font-family: "Funnel Sans", sans-serif;
 }
 
+.root {
+  overflow: hidden;
+}
+
 .container {
   width: 80%;
   margin: auto;
