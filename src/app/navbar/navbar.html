@@ -1,14 +1,4 @@
 <!-- Templates -->
-<ng-template #navLinks>
-  <a (click)="scrollToSection(''); toggleNavbar()">Home</a>
-  <a (click)="scrollToSection('about'); toggleNavbar()">About me</a>
-  <a (click)="scrollToSection('projects'); toggleNavbar()">Projects</a>
-  <a (click)="scrollToSection('career'); toggleNavbar()">Career</a>
-  <a (click)="scrollToSection('education'); toggleNavbar()">Education</a>
-  <a (click)="scrollToSection('skills'); toggleNavbar()">Skills</a>
-  <a (click)="scrollToSection('contact'); toggleNavbar()">Contact me</a>
-</ng-template>
-
 <ng-template #navToggleBtnOpen>
   <div class="toggle-navbar-button-parent">
     <button class="toggle-navbar-button" (click)="toggleNavbar()"><i class="bi bi-list"></i></button>
@@ -37,17 +27,32 @@
         } @else {
         <ng-container *ngTemplateOutlet="navToggleBtnClose"></ng-container>
         } } @else {
-        <!-- Nav Links Desktop -->
+        <!-- Nav List Desktop -->
+        @if (!isSmallScreen) {
         <div class="nav-list">
-          <ng-container *ngTemplateOutlet="navLinks"></ng-container>
+          <a (click)="scrollToSection(''); toggleNavbar()">Home</a>
+          <a (click)="scrollToSection('about'); toggleNavbar()">About me</a>
+          <a (click)="scrollToSection('projects'); toggleNavbar()">Projects</a>
+          <a (click)="scrollToSection('career'); toggleNavbar()">Career</a>
+          <a (click)="scrollToSection('education'); toggleNavbar()">Education</a>
+          <a (click)="scrollToSection('skills'); toggleNavbar()">Skills</a>
+          <a (click)="scrollToSection('contact'); toggleNavbar()">Contact me</a>
         </div>
-        }
+        } }
       </div>
 
-      <!-- Nav Links Mobile -->
+      <!-- Nav List Mobile -->
       @if (isSmallScreen && !collapsed) {
-      <div class="nav-list">
-        <ng-container *ngTemplateOutlet="navLinks"></ng-container>
+      <div [@navExpand] class="nav-expand-outer">
+        <div class="nav-list">
+          <a (click)="scrollToSection(''); toggleNavbar()">Home</a>
+          <a (click)="scrollToSection('about'); toggleNavbar()">About me</a>
+          <a (click)="scrollToSection('projects'); toggleNavbar()">Projects</a>
+          <a (click)="scrollToSection('career'); toggleNavbar()">Career</a>
+          <a (click)="scrollToSection('education'); toggleNavbar()">Education</a>
+          <a (click)="scrollToSection('skills'); toggleNavbar()">Skills</a>
+          <a (click)="scrollToSection('contact'); toggleNavbar()">Contact me</a>
+        </div>
       </div>
       }
     </div>

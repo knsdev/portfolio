@@ -84,6 +84,10 @@ a:hover {
   font-weight: 600;
 }
 
+.nav-expand-outer {
+  overflow: hidden;
+}
+
 @media (width < 1000px) {
   .nav-row {
     justify-content: space-between;

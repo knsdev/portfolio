@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 const NAV_BREAKPOINT: number = 903; // has to be 1px greater than the breakpoint in css
 
@@ -8,6 +9,12 @@ const NAV_BREAKPOINT: number = 903; // has to be 1px greater than the breakpoint
   imports: [NgTemplateOutlet],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
+  animations: [
+    trigger('navExpand', [
+      transition(':enter', [style({ height: 0, opacity: 0 }), animate('300ms ease-out', style({ height: '*', opacity: 1 }))]),
+      transition(':leave', [animate('200ms ease-in', style({ height: 0, opacity: 0 }))]),
+    ]),
+  ],
 })
 export class Navbar {
   collapsed: boolean = true;
