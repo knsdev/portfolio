@@ -1,43 +1,55 @@
 <!-- Templates -->
 <ng-template #navLinks>
-  <a (click)="toggleNavbar()" href="#">Home</a>
-  <a (click)="toggleNavbar()" href="#about">About me</a>
-  <a (click)="toggleNavbar()" href="#projects">Projects</a>
-  <a (click)="toggleNavbar()" href="#work-experience">Career</a>
-  <a (click)="toggleNavbar()" href="#education">Education</a>
-  <a (click)="toggleNavbar()" href="#skills">Skills</a>
-  <a (click)="toggleNavbar()" href="#contact">Contact me</a>
+  <a (click)="scrollToSection(''); toggleNavbar()">Home</a>
+  <a (click)="scrollToSection('about'); toggleNavbar()">About me</a>
+  <a (click)="scrollToSection('projects'); toggleNavbar()">Projects</a>
+  <a (click)="scrollToSection('career'); toggleNavbar()">Career</a>
+  <a (click)="scrollToSection('education'); toggleNavbar()">Education</a>
+  <a (click)="scrollToSection('skills'); toggleNavbar()">Skills</a>
+  <a (click)="scrollToSection('contact'); toggleNavbar()">Contact me</a>
 </ng-template>
 
 <ng-template #navToggleBtnOpen>
-  <button class="toggle-navbar-button" (click)="toggleNavbar()"><i class="bi bi-list"></i></button>
+  <div class="toggle-navbar-button-parent">
+    <button class="toggle-navbar-button" (click)="toggleNavbar()"><i class="bi bi-list"></i></button>
+  </div>
 </ng-template>
 
 <ng-template #navToggleBtnClose>
-  <button class="toggle-navbar-button" (click)="toggleNavbar()"><i class="bi bi-x-lg"></i></button>
+  <div class="toggle-navbar-button-parent">
+    <button class="toggle-navbar-button" (click)="toggleNavbar()"><i class="bi bi-x-lg"></i></button>
+  </div>
 </ng-template>
 
 <!-- Navbar -->
 <header>
   <nav>
     <div class="nav-root">
-      <div class="nav-child">
+      <div class="nav-row">
         <div class="name-container">
           <h2 class="first-name">Kim Niklas</h2>
           <h2 class="last-name">Schl&uuml;ter</h2>
         </div>
 
+        <!-- Nav Toggle Button  -->
+        @if (isSmallScreen) { @if (collapsed) {
+        <ng-container *ngTemplateOutlet="navToggleBtnOpen"></ng-container>
+        } @else {
+        <ng-container *ngTemplateOutlet="navToggleBtnClose"></ng-container>
+        } } @else {
+        <!-- Nav Links Desktop -->
         <div class="nav-list">
-          @if (isSmallScreen) { @if (collapsed) {
-          <ng-container *ngTemplateOutlet="navToggleBtnOpen"></ng-container>
-          } @else {
           <ng-container *ngTemplateOutlet="navLinks"></ng-container>
-          <ng-container *ngTemplateOutlet="navToggleBtnClose"></ng-container>
-          } } @else {
-          <ng-container *ngTemplateOutlet="navLinks"></ng-container>
-          }
         </div>
+        }
       </div>
+
+      <!-- Nav Links Mobile -->
+      @if (isSmallScreen && !collapsed) {
+      <div class="nav-list">
+        <ng-container *ngTemplateOutlet="navLinks"></ng-container>
+      </div>
+      }
     </div>
   </nav>
 </header>
