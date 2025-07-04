@@ -30,13 +30,13 @@
         <!-- Nav List Desktop -->
         @if (!isSmallScreen) {
         <div class="nav-list">
-          <a (click)="scrollToSection(''); toggleNavbar()">Home</a>
-          <a (click)="scrollToSection('about'); toggleNavbar()">About me</a>
-          <a (click)="scrollToSection('projects'); toggleNavbar()">Projects</a>
-          <a (click)="scrollToSection('career'); toggleNavbar()">Career</a>
-          <a (click)="scrollToSection('education'); toggleNavbar()">Education</a>
-          <a (click)="scrollToSection('skills'); toggleNavbar()">Skills</a>
-          <a (click)="scrollToSection('contact'); toggleNavbar()">Contact me</a>
+          <a (click)="scrollToSectionCloseNavbar(''); ">Home</a>
+          <a (click)="scrollToSectionCloseNavbar('about'); ">About me</a>
+          <a (click)="scrollToSectionCloseNavbar('projects'); ">Projects</a>
+          <a (click)="scrollToSectionCloseNavbar('career'); ">Career</a>
+          <a (click)="scrollToSectionCloseNavbar('education'); ">Education</a>
+          <a (click)="scrollToSectionCloseNavbar('skills'); ">Skills</a>
+          <a (click)="scrollToSectionCloseNavbar('contact'); ">Contact me</a>
         </div>
         } }
       </div>
@@ -45,13 +45,13 @@
       @if (isSmallScreen && !collapsed) {
       <div [@navExpand] class="nav-expand-outer">
         <div class="nav-list">
-          <a (click)="scrollToSection(''); toggleNavbar()">Home</a>
-          <a (click)="scrollToSection('about'); toggleNavbar()">About me</a>
-          <a (click)="scrollToSection('projects'); toggleNavbar()">Projects</a>
-          <a (click)="scrollToSection('career'); toggleNavbar()">Career</a>
-          <a (click)="scrollToSection('education'); toggleNavbar()">Education</a>
-          <a (click)="scrollToSection('skills'); toggleNavbar()">Skills</a>
-          <a (click)="scrollToSection('contact'); toggleNavbar()">Contact me</a>
+          <a (click)="scrollToSectionCloseNavbar(''); ">Home</a>
+          <a (click)="scrollToSectionCloseNavbar('about'); ">About me</a>
+          <a (click)="scrollToSectionCloseNavbar('projects'); ">Projects</a>
+          <a (click)="scrollToSectionCloseNavbar('career'); ">Career</a>
+          <a (click)="scrollToSectionCloseNavbar('education'); ">Education</a>
+          <a (click)="scrollToSectionCloseNavbar('skills'); ">Skills</a>
+          <a (click)="scrollToSectionCloseNavbar('contact'); ">Contact me</a>
         </div>
       </div>
       }

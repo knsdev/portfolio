@@ -43,4 +43,9 @@ export class Navbar {
       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }
   }
+
+  scrollToSectionCloseNavbar(id: string): void {
+    this.scrollToSection(id);
+    this.collapsed = true;
+  }
 }

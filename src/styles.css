@@ -37,13 +37,13 @@ html {
   scroll-behavior: smooth;
 }
 
+#about {
+  scroll-margin-top: 3rem;
+}
+
 #projects,
 #skills {
   scroll-margin-top: 2.35rem;
-}
-
-#about {
-  scroll-margin-top: 3rem;
 }
 
 #career,
@@ -112,5 +112,21 @@ hr {
 @media (width < 1100px) {
   .container {
     width: 100%;
+  }
+}
+
+@media (width < 902px) {
+  #about {
+    scroll-margin-top: 21rem;
+  }
+
+  #projects,
+  #skills {
+    scroll-margin-top: 21rem;
+  }
+
+  #career,
+  #education {
+    scroll-margin-top: 22.5rem;
   }
 }
