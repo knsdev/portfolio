@@ -21,8 +21,9 @@ h2 {
 }
 
 .nav-root {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
   width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .nav-row {
@@ -63,6 +64,16 @@ h2 {
   }
 }
 
+.nav-expand-outer {
+  background-color: var(--color-bg-navbar);
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
 .nav-list {
   display: flex;
   flex-flow: row nowrap;
@@ -75,17 +86,12 @@ a {
   letter-spacing: 0.5px;
   text-decoration: none;
   cursor: pointer;
-  color: var(--color-navbar-links);
   transition: all 0.15s ease-in-out;
 }
 
 a:hover {
   transform: scale(1.25);
   font-weight: 600;
-}
-
-.nav-expand-outer {
-  overflow: hidden;
 }
 
 @media (width < 1000px) {

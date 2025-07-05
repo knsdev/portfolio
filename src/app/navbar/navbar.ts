@@ -11,8 +11,11 @@ const NAV_BREAKPOINT: number = 903; // has to be 1px greater than the breakpoint
   styleUrl: './navbar.css',
   animations: [
     trigger('navExpand', [
-      transition(':enter', [style({ height: 0, opacity: 0 }), animate('300ms ease-out', style({ height: '*', opacity: 1 }))]),
-      transition(':leave', [animate('200ms ease-in', style({ height: 0, opacity: 0 }))]),
+      transition(':enter', [
+        style({ height: 0, color: 'rgba(0,0,0,0)' }),
+        animate('300ms ease-out', style({ height: '*', color: 'rgba(0,0,0,1)' })),
+      ]),
+      transition(':leave', [animate('200ms ease-in', style({ height: 0, color: 'rgba(0,0,0,0)' }))]),
     ]),
   ],
 })

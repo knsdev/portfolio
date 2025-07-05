@@ -13,7 +13,6 @@
   --color-bg-navbar: var(--color-1);
   --color-text-first-name: var(--color-4);
   --color-text-last-name: var(--color-3);
-  --color-navbar-links: var(--color-5);
   --color-bg-about: var(--color-0);
   --color-bg-profile-picture: var(--color-1);
   --color-bg-projects: var(--color-1);
@@ -112,21 +111,5 @@ hr {
 @media (width < 1100px) {
   .container {
     width: 100%;
-  }
-}
-
-@media (width < 902px) {
-  #about {
-    scroll-margin-top: 21rem;
-  }
-
-  #projects,
-  #skills {
-    scroll-margin-top: 21rem;
-  }
-
-  #career,
-  #education {
-    scroll-margin-top: 22.5rem;
   }
 }
