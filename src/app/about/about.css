@@ -60,9 +60,10 @@ h3 {
 }
 
 p {
-  max-width: 22rem;
-  font-size: 1.1rem;
+  max-width: 25rem;
+  font-size: 1.2rem;
   line-height: 2rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (width < 902px) {
