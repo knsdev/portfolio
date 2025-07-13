@@ -31,10 +31,6 @@
   }
 }
 
-.project:hover {
-  transform: scale(1.05);
-}
-
 .project-body {
   padding: 1rem;
 }
@@ -100,11 +96,17 @@ li {
   }
 }
 
-.project-hover-area-active:hover {
-  i,
-  p {
-    color: rgba(255, 255, 255, 1);
-    transform: scale(1.3);
+@media (width > 576px) {
+  .project:hover {
+    transform: scale(1.05);
+  }
+
+  .project-hover-area-active:hover {
+    i,
+    p {
+      color: rgba(255, 255, 255, 1);
+      transform: scale(1.3);
+    }
   }
 }
 

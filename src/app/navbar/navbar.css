@@ -90,9 +90,11 @@ a {
   transition: all 0.15s ease-in-out;
 }
 
-a:hover {
-  transform: scale(1.25);
-  font-weight: 600;
+@media (width > 576px) {
+  a:hover {
+    transform: scale(1.2);
+    font-weight: 600;
+  }
 }
 
 @media (width < 1000px) {

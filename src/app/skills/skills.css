@@ -23,10 +23,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.skill:hover {
-  transform: scale(1.1);
-}
-
 h3 {
   padding: 0.5rem 0 0.5rem 1rem;
 }
@@ -49,6 +45,12 @@ h5 {
 
 .bg-advanced {
   background-color: var(--color-3);
+}
+
+@media (width > 576px) {
+  .skill:hover {
+    transform: scale(1.1);
+  }
 }
 
 @media (width < 902px) {

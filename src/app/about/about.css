@@ -18,10 +18,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.img-container:hover {
-  transform: scale(1.05);
-}
-
 img {
   width: 100%;
   height: 100%;
@@ -64,6 +60,12 @@ p {
   font-size: 1.2rem;
   line-height: 2rem;
   margin-bottom: 0.75rem;
+}
+
+@media (width > 576px) {
+  .img-container:hover {
+    transform: scale(1.05);
+  }
 }
 
 @media (width < 902px) {

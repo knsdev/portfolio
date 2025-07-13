@@ -53,10 +53,12 @@ a:visited {
   transition: all 0.2s ease-in-out;
 }
 
-a:hover {
-  color: rgb(44, 95, 183);
-  transform: scale(1.15);
-  transition: all 0.2s ease-in-out;
+@media (width > 576px) {
+  a:hover {
+    color: rgb(44, 95, 183);
+    transform: scale(1.15);
+    transition: all 0.2s ease-in-out;
+  }
 }
 
 @media (width < 1000px) {
