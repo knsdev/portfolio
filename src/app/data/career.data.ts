@@ -4,7 +4,7 @@ export const WORK_POSITIONS: ICareerEntry[] = [
   {
     title: 'Full Stack Web Developer Course',
     companyName: 'Code Factory',
-    location: 'Vienna (90% on-site, 10% online)',
+    location: 'Vienna, Austria',
     companyUrl: 'https://codefactory.wien/courses/course-details/ma87XgP6wk5hGuMlu9O9',
     products: [],
     startDate: '12/05/2025',
@@ -94,7 +94,7 @@ export const WORK_POSITIONS: ICareerEntry[] = [
   {
     title: 'Game Programmer (Working Student)',
     companyName: 'vAudience GmbH',
-    location: 'remote, Frankfurt am Main, Germany',
+    location: 'Frankfurt am Main, Germany',
     companyUrl: '',
     products: [],
     startDate: '03/2017',
