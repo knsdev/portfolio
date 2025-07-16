@@ -29,7 +29,7 @@ export const SKILLS: ISkill[] = [
   {
     name: 'React',
     level: SkillLevel.Beginner,
-    infoList: ['Learned through an online tutorial series'],
+    infoList: ['Self-taught through online tutorial series'],
     projectIds: [],
   },
   {
@@ -41,7 +41,7 @@ export const SKILLS: ISkill[] = [
   {
     name: 'C/C++',
     level: SkillLevel.Advanced,
-    infoList: ['2 years of professional experience', 'Studied at Games Academy'],
+    infoList: ['2 years of professional experience in C/C++', 'Studied at Games Academy'],
     projectIds: [ProjectId.Iolite],
   },
   {
@@ -53,13 +53,13 @@ export const SKILLS: ISkill[] = [
   {
     name: 'ASP.NET',
     level: SkillLevel.Beginner,
-    infoList: ['Used during a school internship'],
+    infoList: ['Used during a school internship', 'No recent experience'],
     projectIds: [],
   },
   {
     name: 'SQL (MySQL)',
     level: SkillLevel.Intermediate,
-    infoList: ['Learned in school'],
+    infoList: ['Studied at CodeFactory', 'First learned in school'],
     projectIds: [],
   },
   {
@@ -77,19 +77,19 @@ export const SKILLS: ISkill[] = [
   {
     name: 'Java',
     level: SkillLevel.Beginner,
-    infoList: ["I learned Java in school as my first object-oriented programming language, but I haven't used it since."],
+    infoList: ['Learned as first object-oriented programming language in school', 'No recent experience'],
     projectIds: [],
   },
   {
     name: 'Ruby',
     level: SkillLevel.Beginner,
-    infoList: ['Used for 3 months at KAIKO to develop small internal tools.'],
+    infoList: ['Used for 3 months at KAIKO to develop internal tools'],
     projectIds: [],
   },
   {
     name: 'Git',
     level: SkillLevel.Advanced,
-    infoList: ['Regularly used for version control in nearly all projects'],
+    infoList: ['Used for version control in most projects'],
     projectIds: [],
   },
 ];

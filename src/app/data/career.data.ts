@@ -33,7 +33,7 @@ export const WORK_POSITIONS: ICareerEntry[] = [
     ],
   },
   {
-    title: 'Job hunting',
+    title: 'Job Search',
     companyName: '',
     location: 'Vienna, Austria',
     companyUrl: '',
@@ -85,7 +85,7 @@ export const WORK_POSITIONS: ICareerEntry[] = [
       'Steam API (Windows PC)',
     ],
     descriptionList: [
-      'Cross platform development in C++',
+      'Cross-platform development in C++',
       'Refactoring and optimization of legacy game code for current consoles and PC',
       'Architecture and implementation of a cross-platform network interface for multiplayer functionality',
       'Tools for converting data in C++ and Ruby',
