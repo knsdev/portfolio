@@ -57,9 +57,10 @@ export const WORK_POSITIONS: ICareerEntry[] = [
     endDate: '08/2024',
     technologies: ['C#', 'Unity game engine'],
     descriptionList: [
-      'Software development in C# using the Unity game engine',
-      'Mobile games (Android, iOS), PC games (Windows)',
-      'Self employment: Participation in a new company with the same partners (01/01/2024 –08/20/2024)',
+      'C# development using the Unity game engine for mobile (Android, iOS) and PC (Windows) games',
+      'Agile software development following Scrum principles, with sprint planning, stand-ups, and reviews',
+      'Used Asana for task tracking, progress monitoring, and team coordination throughout development cycles',
+      'Self employment: Participation in a new company with the same partners (01/01/2024 – 08/20/2024)',
     ],
   },
   {
@@ -85,10 +86,11 @@ export const WORK_POSITIONS: ICareerEntry[] = [
       'Steam API (Windows PC)',
     ],
     descriptionList: [
-      'Cross-platform development in C++',
-      'Refactoring and optimization of legacy game code for current consoles and PC',
-      'Architecture and implementation of a cross-platform network interface for multiplayer functionality',
-      'Tools for converting data in C++ and Ruby',
+      'C++ development',
+      'Agile software development following Scrum principles, with sprint planning, stand-ups, and reviews',
+      'Refactored and optimized legacy game code for current-gen consoles and PC',
+      'Designed and implemented a cross- platform network interface for multiplayer features',
+      'Created Tools for converting data in Ruby',
     ],
   },
   {
@@ -100,10 +102,10 @@ export const WORK_POSITIONS: ICareerEntry[] = [
     startDate: '03/2017',
     endDate: '03/2017',
     technologies: ['C#', 'Unity game engine'],
-    descriptionList: [],
+    descriptionList: ['C# development using the Unity game engine'],
   },
   {
-    title: 'Internship as a Software Developer',
+    title: 'Web Developer (Internship)',
     companyName: 'Voxtron GmbH',
     location: 'Ahlen, Germany',
     companyUrl: '',
@@ -111,7 +113,7 @@ export const WORK_POSITIONS: ICareerEntry[] = [
     startDate: '07/2013',
     endDate: '08/2013',
     technologies: ['C#', 'ASP.NET', 'Entity Framework'],
-    descriptionList: [],
+    descriptionList: ['Backend-focused web development using C#, ASP.NET, and Entity Framework'],
   },
 ];
 

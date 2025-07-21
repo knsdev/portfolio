@@ -63,7 +63,13 @@ export const SKILLS: ISkill[] = [
     projectIds: [],
   },
   {
-    name: 'PHP (Symfony)',
+    name: 'PHP',
+    level: SkillLevel.Intermediate,
+    infoList: ['Studied at CodeFactory'],
+    projectIds: [],
+  },
+  {
+    name: 'Symfony',
     level: SkillLevel.Intermediate,
     infoList: ['Studied at CodeFactory'],
     projectIds: [],
