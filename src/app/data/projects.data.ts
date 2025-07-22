@@ -42,8 +42,16 @@ export const PROJECTS: IProject[] = [
     name: 'Food blog',
     imageFilename: 'food-blog-about.jpg',
     gitHubLink: 'https://github.com/knsdev/food-blog',
-    description: 'First Exam at CodeFactory',
-    features: ['Responsive design'],
+    description:
+      'My first exam project at CodeFactory, built using only HTML and CSS. It’s a responsive multi-page food blog showcasing core web layout and styling skills.',
+    features: [
+      'Responsive design with media queries (mobile, tablet)',
+      'Custom fonts',
+      'Navigation bar with site and category links',
+      'Recipe of the Month and About pages',
+      'Grid-based layout for food items',
+      'Footer that stays at the bottom of the page',
+    ],
     languages: ['HTML', 'CSS'],
   },
   {
