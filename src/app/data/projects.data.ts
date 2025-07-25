@@ -18,7 +18,7 @@ export const PROJECTS: IProject[] = [
     id: ProjectId.OnlineStoreFrontend,
     name: 'Online Store Frontend',
     imageFilename: 'online-store-frontend.jpg',
-    gitHubLink: 'https://github.com/knsdev/weekly-planner',
+    gitHubLink: 'https://github.com/knsdev/online-store-frontend',
     description: 'Third Exam at CodeFactory',
     features: [
       'Angular app with routing between pages',
