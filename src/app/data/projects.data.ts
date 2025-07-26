@@ -6,6 +6,21 @@ export function getProjectById(id: ProjectId): IProject | undefined {
 
 export const PROJECTS: IProject[] = [
   {
+    id: ProjectId.BigLibrary,
+    name: 'Big Library',
+    imageFilename: 'big_library.jpg',
+    gitHubLink: 'https://github.com/knsdev/big_library',
+    description: 'A web app built with PHP and MySQL that lets users manage media (Books, DVDs, CDs).',
+    features: [
+      'List of media with cover images and details',
+      'Add, edit, delete, and view details of media',
+      'Search and filter through the library',
+      'Simple, clean interface using Bootstrap',
+      'Delete confirm modal',
+    ],
+    languages: ['HTML', 'CSS', 'JS', 'PHP'],
+  },
+  {
     id: ProjectId.Portfolio,
     name: 'This Portfolio Website',
     imageFilename: 'portfolio-website.png',

@@ -1,6 +1,7 @@
 export enum ProjectId {
   None = -1,
 
+  BigLibrary,
   Portfolio,
   OnlineStoreFrontend,
   WeeklyPlanner,
