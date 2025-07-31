@@ -111,17 +111,37 @@ li {
   }
 }
 
-@media (width > 576px) {
+@media (hover: hover) {
   .project:hover {
     transform: scale(1.05);
   }
 
-  .project-hover-area-active:hover {
+  .project-link:hover {
     i,
     p {
       color: rgba(255, 255, 255, 1);
       transform: scale(1.3);
     }
+  }
+}
+
+@media (hover: none) {
+  .project-hover-area-hidden,
+  .project-hover-area-active {
+    i,
+    p {
+      color: rgba(25, 25, 25, 1);
+      transform: scale(1.1);
+    }
+  }
+
+  .project-hover-area {
+    background-color: var(--color-0);
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 0 1rem 1rem 1rem;
+    font-size: 0.55rem;
   }
 }
 
