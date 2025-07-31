@@ -2,7 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { NgTemplateOutlet } from '@angular/common';
 import { trigger, transition, style, animate } from '@angular/animations';
 
-const NAV_BREAKPOINT: number = 903; // has to be 1px greater than the breakpoint in css
+const NAV_BREAKPOINT: number = 951; // has to be 1px greater than the breakpoint in css
 
 @Component({
   selector: 'app-navbar',
