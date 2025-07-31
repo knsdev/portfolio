@@ -16,6 +16,7 @@ export interface IProject {
   name: string;
   imageFilename: string;
   gitHubLink: string;
+  appLink: string;
   description: string;
   features: string[];
   languages: string[];

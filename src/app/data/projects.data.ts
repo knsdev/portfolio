@@ -10,6 +10,7 @@ export const PROJECTS: IProject[] = [
     name: 'Big Library',
     imageFilename: 'big_library.jpg',
     gitHubLink: 'https://github.com/knsdev/big_library',
+    appLink: 'https://kim.codefactory.live/big_library',
     description: 'A web app built with PHP and MySQL that lets users manage media (Books, DVDs, CDs).',
     features: [
       'List of media with cover images and details',
@@ -25,6 +26,7 @@ export const PROJECTS: IProject[] = [
     name: 'This Portfolio Website',
     imageFilename: 'portfolio-website.png',
     gitHubLink: 'https://github.com/knsdev/portfolio',
+    appLink: '',
     description: '',
     features: ['Angular app', 'Responsive design'],
     languages: ['HTML', 'CSS', 'TS'],
@@ -34,6 +36,7 @@ export const PROJECTS: IProject[] = [
     name: 'Online Store Frontend',
     imageFilename: 'online-store-frontend.jpg',
     gitHubLink: 'https://github.com/knsdev/online-store-frontend',
+    appLink: 'https://kim.codefactory.live/online-store-frontend',
     description: 'Third Exam at CodeFactory',
     features: [
       'Angular app with routing between pages',
@@ -48,6 +51,7 @@ export const PROJECTS: IProject[] = [
     name: 'Weekly Planner',
     imageFilename: 'weekly-planner.jpg',
     gitHubLink: 'https://github.com/knsdev/weekly-planner',
+    appLink: '',
     description: 'Second Exam at CodeFactory',
     features: ['Responsive design'],
     languages: ['HTML', 'CSS', 'JS'],
@@ -57,6 +61,7 @@ export const PROJECTS: IProject[] = [
     name: 'Food blog',
     imageFilename: 'food-blog-about.jpg',
     gitHubLink: 'https://github.com/knsdev/food-blog',
+    appLink: 'https://kim.codefactory.live/food-blog',
     description:
       'My first exam project at CodeFactory, built using only HTML and CSS. It’s a responsive multi-page food blog showcasing core web layout and styling skills.',
     features: [
@@ -74,6 +79,7 @@ export const PROJECTS: IProject[] = [
     name: 'iolite',
     imageFilename: 'terrain_02.png',
     gitHubLink: 'https://github.com/knsdev/iolite',
+    appLink: 'https://github.com/knsdev/iolite/releases/tag/v0.1.0',
     description:
       'A simple and lightweight 3D game engine written in C++ with OpenGL. It includes a basic terrain editor, allowing you to create and modify 3D landscapes.',
     features: [

@@ -32,19 +32,25 @@
           }
         </div>
 
-        <!-- On mouse hover: Show GitHub Link -->
-        <a href="{{ project.gitHubLink }}" target="_blank">
-          <div
-            class="project-hover-area"
-            [ngClass]="{
+        <!-- On mouse hover: Show Links -->
+        <div
+          class="project-hover-area"
+          [ngClass]="{
             'project-hover-area-active': project.id === mouseHoverProjectId,
             'project-hover-area-hidden': project.id !== mouseHoverProjectId
             }"
-          >
+        >
+          @if (project.appLink) {
+          <a href="{{ project.appLink }}" target="_blank">
+            <i class="bi bi-window"></i>
+            <p>App</p>
+          </a>
+          }
+          <a href="{{ project.gitHubLink }}" target="_blank">
             <i class="bi bi-github"></i>
             <p>GitHub</p>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
       }
     </div>
