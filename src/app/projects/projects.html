@@ -6,7 +6,7 @@
       <!-- Loop through project list -->
       @for (project of projectList; track project.id) {
       <div class="project" (mouseenter)="onMouseEnter(project.id)" (mouseleave)="onMouseLeave()">
-        <img [src]="'/images/projects/' + project.imageFilename" alt="Image of {{ project.name }}" />
+        <img [src]="'/portfolio/images/projects/' + project.imageFilename" alt="Image of {{ project.name }}" />
         <div class="project-body">
           <h3>{{ project.name }}</h3>
           <p>{{ project.description }}</p>
@@ -33,13 +33,10 @@
         </div>
 
         <!-- On mouse hover: Show Links -->
-        <div
-          class="project-hover-area"
-          [ngClass]="{
+        <div class="project-hover-area" [ngClass]="{
             'project-hover-area-active': project.id === mouseHoverProjectId,
             'project-hover-area-hidden': project.id !== mouseHoverProjectId
-            }"
-        >
+            }">
           @if (project.appLink) {
           <a href="{{ project.appLink }}" target="_blank" class="project-link">
             <i class="bi bi-window"></i>
