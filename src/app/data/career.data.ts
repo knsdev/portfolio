@@ -2,10 +2,21 @@ import { ICareerEntry } from '../models/career-entry.model';
 
 export const WORK_POSITIONS: ICareerEntry[] = [
   {
+    title: 'Web Developer (Internship)',
+    companyName: 'Code Factory',
+    location: 'Vienna, Austria',
+    companyUrl: 'https://codefactory.wien/',
+    products: [{ name: 'Frauenforum Gänserndorf', url: 'https://www.frauenforum-gsdf.at/' }],
+    startDate: '01/09/2025',
+    endDate: '30/09/2025',
+    technologies: [],
+    descriptionList: ['Conception and implementation of a new website for the Frauenforum Gänserndorf'],
+  },
+  {
     title: 'Full Stack Web Developer Course',
     companyName: 'Code Factory',
     location: 'Vienna, Austria',
-    companyUrl: 'https://codefactory.wien/courses/course-details/ma87XgP6wk5hGuMlu9O9',
+    companyUrl: 'https://codefactory.wien/',
     products: [],
     startDate: '12/05/2025',
     endDate: '28/08/2025',
@@ -31,17 +42,6 @@ export const WORK_POSITIONS: ICareerEntry[] = [
       'SCRUM & Requirements Engineering',
       'Project Documentation',
     ],
-  },
-  {
-    title: 'Job Search',
-    companyName: '',
-    location: 'Vienna, Austria',
-    companyUrl: '',
-    products: [],
-    startDate: '09/2024',
-    endDate: '04/2025',
-    technologies: [],
-    descriptionList: [],
   },
   {
     title: 'Game Programmer (Startup)',

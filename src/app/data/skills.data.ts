@@ -10,13 +10,13 @@ export const SKILLS: ISkill[] = [
   },
   {
     name: 'JavaScript',
-    level: SkillLevel.Intermediate,
+    level: SkillLevel.Advanced,
     infoList: ['Studied at CodeFactory'],
     projectIds: [ProjectId.WeeklyPlanner],
   },
   {
     name: 'TypeScript',
-    level: SkillLevel.Intermediate,
+    level: SkillLevel.Advanced,
     infoList: ['Studied at CodeFactory'],
     projectIds: [ProjectId.OnlineStoreFrontend, ProjectId.Portfolio],
   },
@@ -34,7 +34,7 @@ export const SKILLS: ISkill[] = [
   },
   {
     name: 'Bootstrap',
-    level: SkillLevel.Intermediate,
+    level: SkillLevel.Advanced,
     infoList: ['Studied at CodeFactory'],
     projectIds: [ProjectId.OnlineStoreFrontend],
   },
@@ -58,13 +58,13 @@ export const SKILLS: ISkill[] = [
   },
   {
     name: 'SQL (MySQL)',
-    level: SkillLevel.Intermediate,
+    level: SkillLevel.Advanced,
     infoList: ['Studied at CodeFactory', 'First learned in school'],
     projectIds: [],
   },
   {
     name: 'PHP',
-    level: SkillLevel.Intermediate,
+    level: SkillLevel.Advanced,
     infoList: ['Studied at CodeFactory'],
     projectIds: [],
   },
@@ -76,7 +76,7 @@ export const SKILLS: ISkill[] = [
   },
   {
     name: 'AJAX',
-    level: SkillLevel.Intermediate,
+    level: SkillLevel.Advanced,
     infoList: ['Studied at CodeFactory'],
     projectIds: [],
   },
