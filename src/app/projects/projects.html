@@ -38,12 +38,12 @@
             'project-hover-area-hidden': project.id !== mouseHoverProjectId
             }">
           @if (project.appLink) {
-          <a href="{{ project.appLink }}" target="_blank" class="project-link">
+          <a href="{{ project.appLink }}" target="_blank" class="project-link project-link-app">
             <i class="bi bi-window"></i>
             <p>App</p>
           </a>
           }
-          <a href="{{ project.gitHubLink }}" target="_blank" class="project-link">
+          <a href="{{ project.gitHubLink }}" target="_blank" class="project-link project-link-github">
             <i class="bi bi-github"></i>
             <p>GitHub</p>
           </a>

@@ -142,6 +142,40 @@ li {
     height: auto;
     padding: 0 1rem 1rem 1rem;
     font-size: 0.55rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 0rem;
+
+    a {
+      text-decoration: none;
+
+      flex: 0 1 auto;
+      flex-basis: 100px;
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+    }
+  }
+
+  .project-link {
+    background-color: #0c56c4;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+
+    p,
+    i {
+      color: white !important;
+    }
+  }
+
+  .project-link-github {
+    background-color: rgb(35, 35, 35);
   }
 }
 
