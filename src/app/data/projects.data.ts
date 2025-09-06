@@ -54,8 +54,8 @@ export const PROJECTS: IProject[] = [
     imageFilename: 'portfolio-website.png',
     gitHubLink: 'https://github.com/knsdev/portfolio',
     appLink: '',
-    description: '',
-    features: [],
+    description: 'The website you are seeing right now.',
+    features: ['Styling without Botstrap'],
     technologies: ['HTML', 'CSS', 'TS', 'Angular'],
   },
   {
@@ -66,7 +66,7 @@ export const PROJECTS: IProject[] = [
     appLink: 'https://kim.codefactory.live/online-store-frontend',
     description: 'This project showcases the frontend design only, with no backend functionality.',
     features: ['Angular app with routing between pages', 'Add items to a shopping cart', 'Checkout form', 'Responsive design'],
-    technologies: ['HTML', 'CSS', 'TS', 'Angular'],
+    technologies: ['HTML', 'CSS', 'TS', 'Angular', 'Bootstrap'],
   },
   {
     id: ProjectId.WeeklyPlanner,
