@@ -54,8 +54,8 @@ export const PROJECTS: IProject[] = [
     imageFilename: 'portfolio-website.png',
     gitHubLink: 'https://github.com/knsdev/portfolio',
     appLink: '',
-    description: 'The website you are seeing right now.',
-    features: ['Styling without Botstrap'],
+    description: '',
+    features: ['Styling without Bootstrap', 'Responsive design'],
     technologies: ['HTML', 'CSS', 'TS', 'Angular'],
   },
   {
