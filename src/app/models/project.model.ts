@@ -1,6 +1,7 @@
 export enum ProjectId {
   None = -1,
 
+  AnimalAdoption,
   BigLibrary,
   Portfolio,
   OnlineStoreFrontend,
@@ -19,5 +20,5 @@ export interface IProject {
   appLink: string;
   description: string;
   features: string[];
-  languages: string[];
+  technologies: string[];
 }

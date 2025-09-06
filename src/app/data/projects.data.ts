@@ -6,6 +6,17 @@ export function getProjectById(id: ProjectId): IProject | undefined {
 
 export const PROJECTS: IProject[] = [
   {
+    id: ProjectId.AnimalAdoption,
+    name: 'Animal Adoption',
+    imageFilename: 'animal_adoption.png',
+    gitHubLink: 'https://github.com/knsdev/animal_adoption',
+    appLink: 'https://kim.codefactory.live/animal_adoption',
+    description:
+      'A web app built with PHP, MySQL and Bootstrap where logged-in users can adopt animals. An administrator can create, update, delete animals.',
+    features: ['Create, Read, Update, and Delete (CRUD) operations', 'Login System', 'Admin Dashboard'],
+    technologies: ['PHP', 'HTML', 'CSS', 'Bootstrap'],
+  },
+  {
     id: ProjectId.BigLibrary,
     name: 'Big Library',
     imageFilename: 'big_library.jpg',
@@ -19,7 +30,7 @@ export const PROJECTS: IProject[] = [
       'Simple, clean interface using Bootstrap',
       'Delete confirm modal',
     ],
-    languages: ['HTML', 'CSS', 'JS', 'PHP'],
+    technologies: ['PHP', 'HTML', 'CSS', 'JS', 'Bootstrap'],
   },
   {
     id: ProjectId.Portfolio,
@@ -28,8 +39,8 @@ export const PROJECTS: IProject[] = [
     gitHubLink: 'https://github.com/knsdev/portfolio',
     appLink: '',
     description: '',
-    features: ['Angular app', 'Responsive design'],
-    languages: ['HTML', 'CSS', 'TS'],
+    features: [],
+    technologies: ['HTML', 'CSS', 'TS', 'Angular'],
   },
   {
     id: ProjectId.OnlineStoreFrontend,
@@ -37,14 +48,9 @@ export const PROJECTS: IProject[] = [
     imageFilename: 'online-store-frontend.jpg',
     gitHubLink: 'https://github.com/knsdev/online-store-frontend',
     appLink: 'https://kim.codefactory.live/online-store-frontend',
-    description: 'Third Exam at CodeFactory',
-    features: [
-      'Angular app with routing between pages',
-      'Add items to a shopping cart',
-      'Checkout form for completing purchases',
-      'Responsive design',
-    ],
-    languages: ['HTML', 'CSS', 'TS'],
+    description: 'This project showcases the frontend design only, with no backend functionality.',
+    features: ['Angular app with routing between pages', 'Add items to a shopping cart', 'Checkout form', 'Responsive design'],
+    technologies: ['HTML', 'CSS', 'TS', 'Angular'],
   },
   {
     id: ProjectId.WeeklyPlanner,
@@ -52,9 +58,10 @@ export const PROJECTS: IProject[] = [
     imageFilename: 'weekly-planner.jpg',
     gitHubLink: 'https://github.com/knsdev/weekly-planner',
     appLink: '',
-    description: 'Second Exam at CodeFactory',
+    description:
+      'A simple to-do list application built with vanilla JavaScript, focusing on core functionality and DOM manipulation.',
     features: ['Responsive design'],
-    languages: ['HTML', 'CSS', 'JS'],
+    technologies: ['HTML', 'CSS', 'JS'],
   },
   {
     id: ProjectId.FoodBlog,
@@ -72,7 +79,7 @@ export const PROJECTS: IProject[] = [
       'Grid-based layout for food items',
       'Footer that stays at the bottom of the page',
     ],
-    languages: ['HTML', 'CSS'],
+    technologies: ['HTML', 'CSS'],
   },
   {
     id: ProjectId.Iolite,
@@ -89,6 +96,6 @@ export const PROJECTS: IProject[] = [
       'Loading model files (obj), textures (png, jpg), shaders (glsl)',
       'Modular and extendable design',
     ],
-    languages: ['C++', 'GLSL'],
+    technologies: ['C++', 'GLSL'],
   },
 ];
