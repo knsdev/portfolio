@@ -1,6 +1,8 @@
 # Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+An Angular web app showcasing my personal portfolio, projects, and skills.
+
+[kim.codefactory.live](https://kim.codefactory.live)
 
 ## License & Personal Data Notice
 
@@ -12,6 +14,10 @@ If you wish to use any part of this repository—including code, designs, or ass
 For inquiries or permission requests, please contact [knsdev](https://github.com/knsdev/).
 
 See the LICENSE file for full details.
+
+## Angular
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
 
 ## Development server
 
