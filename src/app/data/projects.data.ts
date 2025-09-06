@@ -6,6 +6,16 @@ export function getProjectById(id: ProjectId): IProject | undefined {
 
 export const PROJECTS: IProject[] = [
   {
+    id: ProjectId.Eventorium,
+    name: 'Eventorium',
+    imageFilename: 'eventorium.jpg',
+    gitHubLink: 'https://github.com/knsdev/eventorium',
+    appLink: '',
+    description: 'A web app built with Symfony (PHP Framework) to manage events.',
+    features: ['Create, Read, Update, and Delete (CRUD) operations'],
+    technologies: ['PHP', 'Symfony', 'Twig', 'HTML', 'CSS', 'Bootstrap'],
+  },
+  {
     id: ProjectId.AnimalAdoption,
     name: 'Animal Adoption',
     imageFilename: 'animal_adoption.png',
@@ -13,7 +23,12 @@ export const PROJECTS: IProject[] = [
     appLink: 'https://kim.codefactory.live/animal_adoption',
     description:
       'A web app built with PHP, MySQL and Bootstrap where logged-in users can adopt animals. An administrator can create, update, delete animals.',
-    features: ['Create, Read, Update, and Delete (CRUD) operations', 'Login System', 'Admin Dashboard'],
+    features: [
+      'Create, Read, Update, and Delete (CRUD) operations',
+      'Login System',
+      'Admin Dashboard',
+      'File upload for user profile picture',
+    ],
     technologies: ['PHP', 'HTML', 'CSS', 'Bootstrap'],
   },
   {
@@ -29,6 +44,7 @@ export const PROJECTS: IProject[] = [
       'Search and filter through the library',
       'Simple, clean interface using Bootstrap',
       'Delete confirm modal',
+      'File upload for user profile picture',
     ],
     technologies: ['PHP', 'HTML', 'CSS', 'JS', 'Bootstrap'],
   },
